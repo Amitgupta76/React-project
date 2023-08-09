@@ -46,7 +46,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-## Meassages App
+## Messages App
 
 You can add messages directly from the input field into the same page after clicking the submit button.
 
