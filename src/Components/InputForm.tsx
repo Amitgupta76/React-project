@@ -18,7 +18,7 @@ const InputForm: React.FC<InputFormProps> = ({ onInputSubmit }) => {
 
   return (
     <div>
-      <input type="text" value={inputValue} onChange={handleInputChange} />
+      <input type="text" value={inputValue} placeholder='Enter Input' onChange={handleInputChange} />
       <button onClick={handleSubmit}>Submit</button>
     </div>
   );
