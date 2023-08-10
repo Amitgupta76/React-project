@@ -1,7 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import InputForm from './InputForm';
 
-test('InputForm renders correctly', () => {
+describe("Input Form", () => {
+  test('InputForm renders correctly', () => {
     const { getByPlaceholderText } = render(<InputForm onInputSubmit={() => {}} />);
     const inputElement = screen.getByPlaceholderText(/Enter Input/i)
     const buttonElement = screen.getByRole("button", { name: /Submit/i })
@@ -15,3 +16,4 @@ test('InputForm renders correctly', () => {
     fireEvent.change(inputElement, { target: { textContent: 'Test input' } });
     expect(inputElement.textContent).toBe('Test input');
   });
+})
