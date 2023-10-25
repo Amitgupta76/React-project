@@ -1,10 +1,9 @@
 import { gql } from '@apollo/client';
 
 export const GET_DATA = gql`
-  query {
-    Message {
-      id
-      conversation
+  query GetMeassages{
+    messages{
+      content
     }
   }
 `;
